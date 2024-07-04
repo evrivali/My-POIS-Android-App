@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPOI"
+    tools:layout_editor_absoluteX="-92dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <Button
+        android:id="@+id/changeTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="184dp"
+        android:enabled="false"
+        android:onClick="changeTimestamp"
+        android:text="Change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TimestampEdit"
+        app:layout_constraintTop_toBottomOf="@+id/changeLocation" />
+
+    <TextView
+        android:id="@+id/EditPOItitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:text="EditPOI"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/searchBarEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SearchView
+        android:id="@+id/searchBarEdit"
+        android:layout_width="332dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/titleEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditPOItitle" />
+
+    <EditText
+        android:id="@+id/titleEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/DescriptionEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBarEdit" />
+
+    <EditText
+        android:id="@+id/TimestampEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LocationEdit" />
+
+    <EditText
+        android:id="@+id/DescriptionEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/LocationEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleEdit" />
+
+    <EditText
+        android:id="@+id/LocationEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/TimestampEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catgoryEdit" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="100dp"
+        android:enabled="false"
+        android:onClick="update"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimestampEdit" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="95dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginBottom="100dp"
+        android:background="#F44336"
+        android:enabled="false"
+        android:onClick="delete"
+        android:shadowColor="#F44336"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBarEdit"
+        app:layout_constraintVertical_bias="0.433"
+        app:strokeColor="#F44336" />
+
+    <Spinner
+        android:id="@+id/catgoryEdit"
+        android:layout_width="300dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/LocationEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DescriptionEdit" />
+
+    <Button
+        android:id="@+id/changeLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="35dp"
+        android:enabled="false"
+        android:onClick="changeLocation"
+        android:text="Change"
+        app:layout_constraintBottom_toTopOf="@+id/changeTimestamp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LocationEdit"
+        app:layout_constraintTop_toBottomOf="@+id/catgoryEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

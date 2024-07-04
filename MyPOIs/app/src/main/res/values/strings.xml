@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyPOIs</string>
+    <string-array name="POI_Categories">
+        <item>University</item>
+        <item>School</item>
+        <item>Work</item>
+        <item>Home</item>
+        <item>Amusement (Restaurant,Cinema,Theater,etc)</item>
+        <item>Shopping (Mall, Supermarket, Clothing store,etc)</item>
+        <item>Other</item>
+    </string-array>
+</resources>
